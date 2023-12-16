@@ -69,8 +69,14 @@ display: none;
     }
     #login{
         position:fixed;
-        right: 1%;
+        right: -3%;
     }
-
     
+    
+    }
+    @media(max-width:460px){
+        #logo{
+            margin-right: 30%;
+
+        }
     }
