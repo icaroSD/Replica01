@@ -71,4 +71,9 @@ header {
   #logo {
     margin-right: 30%;
   }
+}
+@media (max-width: 350px) {
+  header {
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=style.css.map */
