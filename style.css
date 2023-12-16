@@ -1,83 +1,69 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: rgb(99, 98, 98);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
 }
 
-@media (max-width: 900px) {
-  header #direita {
-    display: none;
-  }
-  header #meio {
-    margin-right: 150px;
-  }
-  #direita #opcao {
-    background-image: url("icones/list.svg");
-    background-repeat: no-repeat;
-  }
-}
-@media (max-width: 800px) {
-  header #logo {
-    display: none;
-  }
-  header #meio {
-    font-size: 2vw;
-    width: 70%;
-    margin-left: 20%;
-  }
-}
-@media (max-width: 1170px) {
-  header #direita p {
-    display: none;
-  }
-}
 header {
-  padding: 20px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgb(209, 209, 209);
+  align-items: center;
+  padding: 20px 13px;
+  border-bottom: 1px solid rgb(201, 194, 194);
 }
 
 #logo {
-  margin-left: 15px;
-  padding-top: 15px;
+  width: 30%;
+  margin-left: 35px;
 }
 
 #meio {
-  margin-left: 170px;
+  font-weight: 600;
+  font-size: 1vw;
   display: flex;
-  text-decoration: none;
-  gap: 15px;
-  box-shadow: 1px 0px 5px grey;
-  border-radius: 40px;
-  padding: 15px;
-  font-size: 1.5vw;
+  gap: 40px;
+  padding: 20px;
+  box-shadow: 1px 1px 5px grey;
+  border-radius: 30px;
+  margin: 0 15px;
 }
 #meio p {
-  border-right: 1px solid grey;
-  padding-right: 10px;
+  padding-right: 40px;
+  border-right: 1px solid rgb(196, 191, 191);
 }
 
 #direita {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 2vw;
+  font-weight: 600;
 }
-#direita p {
-  font-weight: bold;
-  font-size: 1.3vw;
-  color: rgb(82, 82, 82);
-}
-
-#login {
-  border: 1px solid grey;
-  border-radius: 40px;
-  padding: 12px 16px;
-  gap: 10px;
+#direita #login {
   display: flex;
-  margin-right: 20px;
+  border: 1px solid rgb(196, 191, 191);
+  border-radius: 30px;
+  padding: 10px 15px;
+  margin-right: 35px;
+  gap: 10px;
 }
 
-#direita #opcao {
-  display: none;
+@media (max-width: 1040px) {
+  #direita p, #globo {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  #meio {
+    display: none;
+  }
+  header {
+    justify-content: center;
+  }
+  #login {
+    position: fixed;
+    right: 1%;
+  }
 }/*# sourceMappingURL=style.css.map */
